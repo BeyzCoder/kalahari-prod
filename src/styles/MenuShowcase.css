@@ -1,0 +1,111 @@
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-black);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.menu-list h2 {
+	width: 100%;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 600;
+	background-color: var(--color-blue);
+	padding: 25px;
+	color: var(--color-yellow);
+	letter-spacing: 10px;
+    z-index: 10;
+}
+.menu-display {
+    background-color: var(--color-black);   
+    width: min(1300px, 80%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    /* border: 1px solid white; */
+}
+.menu-display > img {
+    width: 500px;
+    object-fit: cover;
+}
+.sample-foods {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 70px 0;
+}
+.sample-foods img {
+    --size-img: 350px;
+	height: var(--size-img);
+	width: var(--size-img);
+	margin: 0 40px;
+	border-radius: 5px;
+}
+.menu-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-options {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+.menu-options button {
+    position: relative;
+    width: 200px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 3px solid var(--color-yellow);
+    border-radius: 3px;
+    color: var(--color-yellow);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color .4s ease;
+    z-index: 1;
+    letter-spacing: 1.5px;
+}
+.menu-options button:hover {
+    color: var(--color-blue);
+    z-index: 1;
+}
+.menu-route {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+.menu-route a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-white);
+    opacity: .5;
+    transition: .4s ease;
+}
+.menu-route a:hover {
+    opacity: 1;
+}
+
+.menu-list .empty-box {
+    position: absolute;
+    border: 3px solid var(--color-yellow);
+    padding: 100px;
+    z-index: 1;
+}
+.menu-list .empty-box:first-of-type {
+    transform: rotate(25deg);
+    scale: 2;
+    left: -120px;
+    bottom: 150px;
+}
+.menu-list .empty-box:last-of-type {
+    transform: rotate(55deg);
+    scale: 1.5;
+    right: -50px;
+    top: 150px;
+}

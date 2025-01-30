@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    
+    overflow-x: hidden;
+    position: relative;
+}
+
+button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: var(--color-yellow);
+	transition: all .4s ease;
+	z-index: -1;
+}
+button:hover::before {
+	width: 100%;
+}
+
+:root {
+    --color-white: #F4F1DE;
+    --color-red: #E07A5F;
+    --color-blue: #3D405B;
+    --color-green: #81B29A;
+    --color-yellow: #F2CC8F;
+    --color-black: #343434;
+}

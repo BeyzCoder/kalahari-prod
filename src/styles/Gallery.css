@@ -1,0 +1,18 @@
+.gallery-component {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px
+}
+
+.gallery-component img {
+    --img-size: 200px;
+    height: var(--img-size);
+    width: var(--img-size);
+    object-fit: cover;
+    transition: .4s ease;
+    cursor: pointer;
+}
+
+.gallery-component img:hover {
+    scale: 1.2;
+}
